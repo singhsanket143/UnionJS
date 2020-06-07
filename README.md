@@ -21,6 +21,8 @@ The return value is a new list containing the union of both the lists.
 
 3. Call the `union` function on two valid Array inputs
 
+4. To run tests use `npm run test`
+
 ## Example
 
 ```

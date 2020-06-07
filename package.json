@@ -4,7 +4,7 @@
   "description": "Helper function to combine to Lists such that the result is a Union of the lists and there are no duplicates in the combined result.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/singhsanket143/UnionJS/issues"
   },
-  "homepage": "https://github.com/singhsanket143/UnionJS#readme"
+  "homepage": "https://github.com/singhsanket143/UnionJS#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
 }
