@@ -19,8 +19,12 @@ let objectEquals = (x, y) => {
     }
 
     // if they are strictly equal, they both need to be object at least
-    if (!(x instanceof Object)) { return false; }
-    if (!(y instanceof Object)) { return false; }
+    if (!(x instanceof Object)) { 
+        return false; 
+    }
+    if (!(y instanceof Object)) { 
+        return false; 
+    }
 
     // recursive object equality check
     var _iterableOfx = Object.keys(x);
@@ -30,8 +34,8 @@ let objectEquals = (x, y) => {
     		return objectEquals(x[key], y[key]); });
 }
 
-let arrayUnique = (arr) => {
-    for(let i=0; i < arr.length; ++i) {
+let combineArray = (arr) => {
+    for(let i = 0; i < arr.length; ++i) {
         // Iterate from the next element in order to ensure unique comparisons
         for(let j=i+1; j < arr.length; ++j) {
             if (objectEquals(arr[i], arr[j])) {
@@ -44,7 +48,7 @@ let arrayUnique = (arr) => {
 }
 
 let union = (array1, array2) => {
-	return arrayUnique(array1.concat(array2))
+	return combineArray(array1.concat(array2))
 }
 
 module.exports = union;
