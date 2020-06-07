@@ -1,6 +1,6 @@
 {
   "name": "union.js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Helper function to combine to Lists such that the result is a Union of the lists and there are no duplicates in the combined result.",
   "main": "index.js",
   "scripts": {
